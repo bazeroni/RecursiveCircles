@@ -1,5 +1,5 @@
 // RecursiveCircles.java
-// program for drawing a recursive circle pattern and displaying it for CSCI 112
+// program for drawing a recursive circle pattern and displaying it. Utilizes Swing, AWT, and a recursive algorithm for CSCI 112
 // last edited Feb. 14, 2022 by S. Gutierrez
 
 package RecursiveCircles;
@@ -11,6 +11,7 @@ import javax.swing.*;
 // the RecursiveCircles class displays the main initialization of the canvas in main()
 public class RecursiveCircles {
 
+    // main() initializes the canvas
     public static void main(String[] args) {
 
         // creates a MyCanvas object
@@ -46,7 +47,7 @@ class MyCanvas extends Canvas {
     } // end paint() method
 
     // drawCircle is a recursive method that draws a circle with given radius, n
-    // it then calls two more times with radii of n / 2, recursively drawing two circles who's midpoints occur at the two intersections of the original previous circle's perimeter and the constant x-axis
+    // it then calls two more times with radii of n / 2, and recursively draws two circles who's midpoints occur at the two intersections of the original previous circle's perimeter and the constant x-axis
     public void drawCircle(Graphics graphics, int radius, int x, int y) {
 
         // base case checks if the radius size is below a certain threshold
